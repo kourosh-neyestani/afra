@@ -7,25 +7,40 @@
     .order-xs-1 {
         order: 1;
     }
+    .order-xs-2 {
+        order: 2;
+    }
 }
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
     .order-sm-1 {
         order: 1;
     }
+    .order-sm-2 {
+        order: 2;
+    }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
     .order-md-1 {
         order: 1;
     }
+    .order-md-2 {
+        order: 2;
+    }
 }
-@media (min-width: 992) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1200px) {
     .order-lg-1 {
         order: 1;
+    }
+    .order-lg-2 {
+        order: 2;
     }
 }
 @media (min-width: 1200px) {
     .order-xl-1 {
         order: 1;
+    }
+    .order-xl-2 {
+        order: 2;
     }
 }
 // Row
@@ -155,13 +170,13 @@
 ------------------------------------*/
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .container{
+    .container {
         max-width: 555px;
     }
 }
 
 @media (min-width: 767px) and (max-width: 992px) {
-    .container{
+    .container {
         max-width: 810px;
     }
 }
