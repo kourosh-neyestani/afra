@@ -1,10 +1,14 @@
 (function ($) {
     "use strict";
-    var AFRA = {};
 
-    // Test
-    AFRA.Test = function () {
-        console.log("Worked!");
+    var fn = {
+        // Launch Functions
+        Launch: function () {
+            fn.Test();
+        },
+        Test: function () {
+            console.log("Worked!");
+        },
     };
 
     // Windows.On.Load
@@ -12,7 +16,6 @@
 
     // Document.Ready
     $(document).ready(function () {
-        AFRA.Test();
+        fn.Launch();
     });
-    
 })(jQuery);
