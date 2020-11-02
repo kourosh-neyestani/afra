@@ -103,8 +103,9 @@
   --base-1: #152c5b;
   --primary: #ef394e;
   --primary: #384cce;
+  --primary: #008aff;
   --primary-1: #384cce;
-  --primary-3: #0e0b2b;
+  --primary-3: #384cce;
   --secondary: #00c9b7;
   --secondary-1: rgb(18, 172, 159);
   --text-color: #666;
@@ -2738,6 +2739,11 @@ h6,
   position: relative;
 }
 
+.app-header a {
+  -webkit-transition: none;
+  transition: none;
+}
+
 .app-header .row > * {
   position: initial;
 }
@@ -2973,33 +2979,16 @@ h6,
   transition: all 0.009ms;
 }
 
-.app-header.light input {
-  color: var(--gray);
-  border-color: #ccc !important;
-}
-
-.app-header.light input::-webkit-input-placeholder {
-  color: #eee;
-}
-
-.app-header.light input:-moz-placeholder {
-  color: #eee;
-}
-
-.app-header.light input::-moz-placeholder {
-  color: #eee;
-}
-
-.app-header.light input:-ms-input-placeholder {
-  color: #eee;
-}
-
 .app-header.light .button-menu span, .app-header.light .button-menu span:before, .app-header.light .button-menu span:after {
   background-color: var(--base-0) !important;
 }
 
+.app-header.light .header-nav {
+  background-color: transparent !important;
+}
+
 .app-header.light.sticky .header-nav {
-  background-color: var(--base-0) !important;
+  background-color: var(--base-1) !important;
 }
 
 .app-header.glass.app-header-1 .header-nav {
@@ -3038,6 +3027,7 @@ h6,
   top: 0;
   left: 0;
   width: 100%;
+  color: var(--base-1);
   position: fixed;
   -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
           box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
@@ -3620,7 +3610,7 @@ h6,
 
 .app-shopping-cart .sidenav-menu .sidenav-down .subtotal {
   padding: 0 9px;
-  border-radius: 9px;
+  border-radius: 12px;
   border-top: 1px dashed var(--gray);
   border-bottom: 1px dashed var(--gray);
   margin-bottom: 20px;
@@ -3757,7 +3747,7 @@ h6,
   white-space: nowrap;
   display: inline-block;
   margin-right: 2px;
-  border-radius: 9px;
+  border-radius: 12px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -3881,6 +3871,42 @@ h6,
 .button-secondary:hover {
   color: var(--base-0);
   background-color: var(--secondary-1);
+}
+
+.button-danger {
+  color: var(--base-0);
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: red;
+}
+
+.button-danger:hover {
+  color: var(--base-0);
+  background-color: red;
+}
+
+.button-success {
+  color: var(--base-0);
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: green;
+}
+
+.button-success:hover {
+  color: var(--base-0);
+  background-color: green;
+}
+
+.button-warning {
+  color: var(--base-0);
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: #f6931c;
+}
+
+.button-warning:hover {
+  color: var(--base-0);
+  background-color: #f6931c;
 }
 
 .button-gradient {
@@ -4178,6 +4204,77 @@ h6,
   line-height: 63px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/*------------------------------------
+    Element: Plan 
+------------------------------------*/
+.el-plan {
+  border: 1px solid var(--gray);
+}
+
+.el-plan .el-plan-head {
+  padding: 30px;
+  position: relative;
+}
+
+.el-plan .el-plan-head .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.el-plan .el-plan-head .price {
+  line-height: 1;
+  font-size: 36px;
+  margin-bottom: 9px;
+}
+
+.el-plan .el-plan-head .price .sign {
+  top: -3px;
+  right: -6px;
+  position: relative;
+}
+
+.el-plan .el-plan-head .price .value {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.el-plan .el-plan-head:after {
+  left: 50%;
+  bottom: 0;
+  width: 80%;
+  height: 1px;
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: -40%;
+  background: radial-gradient(ellipse at center, #d1dbe7 0, rgba(255, 255, 255, 0) 75%);
+}
+
+.el-plan .el-plan-body {
+  padding: 30px;
+}
+
+.el-plan .el-plan-body ul {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.el-plan .el-plan-body ul li {
+  opacity: .6;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.el-plan.bg-primary .el-plan-body ul li {
+  opacity: .75;
+}
+
+.el-plan.el-plan-1 {
+  text-align: center;
+  border-radius: 12px;
 }
 
 /*------------------------------------

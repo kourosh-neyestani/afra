@@ -12,8 +12,9 @@
     --base-1: #152c5b;
     --primary: #ef394e;
     --primary: #384cce;
+    --primary: #008aff;
     --primary-1: #384cce;
-    --primary-3: #0e0b2b;
+    --primary-3: #384cce;
     --secondary: #00c9b7;
     --secondary-1: rgb(18, 172, 159);
     --text-color: #666;
@@ -98,7 +99,7 @@ $container-lg: 1200px;
 $container-xl: 1800px;
 
 $default-br: 9px;
-$default-br: 9px;
+$default-br: 12px;
 $default-bs: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
 $default-bs-2: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
 $default-bs-hover: 0 3px 1px 0 $primary;

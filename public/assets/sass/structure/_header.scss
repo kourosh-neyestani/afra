@@ -11,6 +11,9 @@ $header-nav: 60px;
     z-index: 999;
     user-select: none;
     position: relative;
+    a {
+        transition: none;
+    }
     .row > * {
         position: initial;
     }
@@ -215,13 +218,6 @@ $header-nav: 60px;
         a {
             transition: all 0.009ms;
         }
-        input {
-            color: $gray;
-            border-color: #ccc !important;
-            @include placeholder() {
-                color: #eee;
-            }
-        }
         .button-menu {
             span {
                 &,
@@ -231,9 +227,12 @@ $header-nav: 60px;
                 }
             }
         }
+        .header-nav {
+            background-color: transparent !important;
+        }
         &.sticky {
             .header-nav {
-                background-color: $base-0 !important;
+                background-color: $base-1 !important;
             }
         }
     }
@@ -288,6 +287,7 @@ $header-nav: 60px;
                 top: 0;
                 left: 0;
                 width: 100%;
+                color: $base-1;
                 position: fixed;
                 box-shadow: $default-bs;
                 background-color: $base-0;

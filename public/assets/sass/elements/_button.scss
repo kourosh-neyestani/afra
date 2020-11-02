@@ -178,6 +178,33 @@
         background-color: $secondary-1;
     }
 }
+.button-danger {
+    color: $base-0;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: $danger;
+    &:hover {
+        color: $base-0;
+        background-color: $danger;
+    }
+}
+.button-success {
+    color: $base-0;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: $success;
+    &:hover {
+        color: $base-0;
+        background-color: $success;
+    }
+}
+.button-warning {
+    color: $base-0;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: $warning;
+    &:hover {
+        color: $base-0;
+        background-color: $warning;
+    }
+}
 .button-gradient {
     color: #fff;
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
