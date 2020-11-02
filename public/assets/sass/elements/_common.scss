@@ -110,3 +110,27 @@
         border-radius: $default-br;
     }
 }
+
+/*------------------------------------
+    Element: Feature 
+------------------------------------*/
+
+// Default
+.el-feature {
+    p {
+        margin-bottom: 0;
+    }
+    h4 {
+        line-height: 1;
+    }
+}
+
+// Plan - 16
+.el-feature {
+    &.el-feature-16 {
+        padding: 45px 30px;
+        text-align: center;
+        border: 1px solid $gray;
+        border-radius: $default-br;
+    }
+}
