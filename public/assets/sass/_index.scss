@@ -63,6 +63,7 @@
     |   |___ Hero
     |   |___ About
     |   |___ Posts
+    |   |___ Story
     |   |___ Users
     |   |___ Quotes
     |   |___ Search
@@ -125,6 +126,7 @@
 @import "sections/hero";
 @import "sections/about";
 @import "sections/posts";
+@import "sections/story";
 @import "sections/common";
 @import "sections/search";
 @import "sections/contact";
