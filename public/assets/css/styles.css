@@ -4278,6 +4278,24 @@ h6,
 }
 
 /*------------------------------------
+    Element: Feature 
+------------------------------------*/
+.el-feature p {
+  margin-bottom: 0;
+}
+
+.el-feature h4 {
+  line-height: 1;
+}
+
+.el-feature.el-feature-16 {
+  padding: 45px 30px;
+  text-align: center;
+  border: 1px solid var(--gray);
+  border-radius: 12px;
+}
+
+/*------------------------------------
     Sections Styles
 ------------------------------------*/
 /*------------------------------------
