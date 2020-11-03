@@ -101,7 +101,7 @@
             margin: 0 0 30px;
             padding: 0;
             li {
-                opacity: .6;
+                opacity: 0.6;
                 display: block;
                 margin-bottom: 15px;
             }
@@ -111,7 +111,7 @@
         .el-plan-body {
             ul {
                 li {
-                    opacity: .75;
+                    opacity: 0.75;
                 }
             }
         }
@@ -149,7 +149,6 @@
         border-radius: $default-br;
     }
 }
-
 
 /*------------------------------------
     Element: Slider
@@ -323,4 +322,15 @@
             }
         }
     }
+}
+
+.el-divider-line {
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 1px;
+    margin: auto;
+    display: block;
+    position: relative;
+    background: radial-gradient(ellipse at center, #d1dbe7 0, rgba(255, 255, 255, 0) 75%);
 }

@@ -24,6 +24,35 @@
             });
         },
         Carousel: function () {
+            var mySwiper = new Swiper(".el-swiper-blog-15", {
+                loop: false,
+                navigation: {
+                    nextEl: ".el-slider-next",
+                    prevEl: ".el-slider-prev",
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 12,
+                    },
+                    576: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 12,
+                    },
+                    768: {
+                        slidesPerView: 1.8,
+                        spaceBetween: 18,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 18,
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 18,
+                    }
+                },
+            });
             var mySwiper = new Swiper(".el-swiper-portfolio-15", {
                 loop: false,
                 navigation: {
