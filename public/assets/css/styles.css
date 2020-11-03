@@ -105,7 +105,7 @@
   --primary: #384cce;
   --primary: #008aff;
   --primary-1: #384cce;
-  --primary-3: #384cce;
+  --primary-3: #171347;
   --secondary: #00c9b7;
   --secondary-1: rgb(18, 172, 159);
   --text-color: #666;
@@ -648,7 +648,7 @@ body {
 
 p {
   color: var(--text-color);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
   font-family: "Cairo", sans-serif;
   letter-spacing: -0.3px;
@@ -733,12 +733,14 @@ h3,
 
 h4,
 .h4 {
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 h5,
 .h5 {
   font-size: 18px;
+  line-height: 1.3;
 }
 
 h6,
@@ -4148,11 +4150,20 @@ h6,
 /*------------------------------------
     Element: Heading
 ------------------------------------*/
-.el-heading.el-heading-15 {
+.el-heading {
   width: 660px;
   max-width: 100%;
-  margin: 0 auto 100px;
+  margin-bottom: 100px;
+}
+
+.el-heading.side {
+  text-align: left;
+}
+
+.el-heading.center {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*------------------------------------
@@ -4777,6 +4788,32 @@ h6,
 /*------------------------------------
     Section: Call to Action
 ------------------------------------*/
+.section-cta p,
+.section-cta h1,
+.section-cta h2,
+.section-cta h3,
+.section-cta h4,
+.section-cta h5,
+.section-cta h6 {
+  color: inherit;
+}
+
+.section-cta.section-cta-17 {
+  color: var(--base-0);
+  padding: 66.66667px;
+  border-radius: 0 60px 0 60px;
+  background-color: var(--primary-3);
+  margin-bottom: 200px;
+}
+
+.section-cta.section-cta-17 p {
+  margin-bottom: 0;
+}
+
+.section-cta.section-cta-17 h4 {
+  margin-bottom: 12px;
+}
+
 /*------------------------------------
     Section: Prcing Table
 ------------------------------------*/
