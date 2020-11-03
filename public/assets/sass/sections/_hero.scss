@@ -93,6 +93,60 @@
             }
         }
     }
+    &.section-hero-17 {
+        .hero-shape {
+            top: 0;
+            left: 8%;
+            right: 0;
+            bottom: 8%;
+            position: absolute;
+            border-top-left-radius: 90px;
+            background: linear-gradient(50deg, $primary 0, $primary 100%) !important;
+        }
+        .hero-frame {
+            left: -6%;
+            width: 840px;
+            bottom: 60px;
+            padding-top: 80%;
+            position: absolute;
+            margin: auto;
+            & > img {
+                top: 0;
+                left: 0;
+                width: 100%;
+                position: absolute;
+            }
+            .hero-frame-inner {
+                top: 6%;
+                left: 12.8%;
+                right: 12.9%;
+                bottom: 4.5%;
+                position: absolute;
+                background-color: #121512;
+            }
+        }
+        .hero-content {
+            margin: auto;
+            padding-top: $space * 1.7;
+            padding-bottom: $space * 1.7;
+            p {
+                color: $base-0;
+                margin-bottom: 25px;
+            }
+            h1 {
+                color: $base-0;
+            }
+        }
+    }
+}
+@media (max-width: 1400px) {
+    .section-hero {
+        &.section-hero-17 {
+            .hero-shape {
+                left: 0;
+            }
+        }
+    }
 }
 @media (max-width: 1200px) {
     .section-hero {
@@ -104,6 +158,16 @@
             }
         }
     }
+    .section-hero {
+        &.section-hero-17 {
+            .hero-shape {
+                left: 0;
+            }
+            .hero-frame {
+                bottom: 150px;
+            }
+        }
+    }
 }
 @media (max-width: 992px) {
     .section-hero {
@@ -112,6 +176,26 @@
                 right: -30px;
                 bottom: 30px;
                 width: 540px;
+            }
+        }
+    }
+    .section-hero {
+        &.section-hero-17 {
+            .hero-shape {
+                bottom: 0;
+            }
+            .hero-frame {
+                top: 0;
+                left: 0;
+                right: 0;
+                max-width: 100%;
+                padding-top: 54%;
+                position: relative;
+            }
+            .hero-content {
+                text-align: center;
+                padding-top: $space;
+                padding-bottom: $space;
             }
         }
     }
