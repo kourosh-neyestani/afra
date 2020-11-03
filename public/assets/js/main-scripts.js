@@ -6,7 +6,6 @@
         Launch: function () {
             fn.Test();
             fn.Sidenav();
-            fn.StickyHeader();
         },
         Test: function () {
             console.log("Worked!");
@@ -21,16 +20,6 @@
             });
             sidenav.on("click", ".button-close-sidenav, .sidenav-close", function () {
                 sidenav.removeClass("active");
-            });
-        },
-        StickyHeader: function () {
-            var header = $(".app-header");
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > header.height()) {
-                    header.addClass("sticky");
-                } else {
-                    header.removeClass("sticky");
-                }
             });
         },
     };
