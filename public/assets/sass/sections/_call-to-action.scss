@@ -1,3 +1,33 @@
 /*------------------------------------
     Section: Call to Action
 ------------------------------------*/
+
+// Default
+.section-cta {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: inherit;
+    }
+}
+
+// Call To Action - 17
+.section-cta {
+    &.section-cta-17 {
+        color: $base-0;
+        padding: $space / 1.5;
+        border-radius: 0 60px 0 60px;
+        background-color: $primary-3;
+        margin-bottom: $space * 2;
+        p {
+            margin-bottom: 0;
+        }
+        h4 {
+            margin-bottom: 12px;
+        }
+    }
+}
