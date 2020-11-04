@@ -2851,7 +2851,8 @@ p {
 }
 
 .app-header .header-nav .el-menu {
-  display: none;
+  float: left;
+  text-align: center;
 }
 
 .app-header .header-nav .el-menu li a {
@@ -2900,6 +2901,11 @@ p {
 .app-header .header-nav .button.button-menu span:after {
   bottom: -8px;
   content: "";
+}
+
+.app-header .header-nav .button.button-contact-us {
+  top: 18px;
+  position: relative;
 }
 
 .app-header .header-nav .header-logo {
@@ -2959,6 +2965,11 @@ p {
   margin-right: 15px;
 }
 
+.app-header.shadow {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+          box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+}
+
 .app-header.light {
   color: var(--gray);
 }
@@ -2988,6 +2999,17 @@ p {
   background-color: var(--base-0);
 }
 
+.app-header.fixed.app-header-1 {
+  top: 0;
+  left: 0;
+  color: var(--gray);
+  position: absolute;
+}
+
+.app-header.fixed.app-header-1 .button-contact-us {
+  background-color: var(--primary);
+}
+
 .app-header.sticky.app-header-1 .header-nav {
   top: 0;
   left: 0;
@@ -2998,6 +3020,10 @@ p {
   background-color: var(--base-0);
   -webkit-animation-name: fadeInDown;
           animation-name: fadeInDown;
+}
+
+.app-header.sticky.app-header-1 .button-contact-us {
+  background-color: var(--secondary);
 }
 
 .app-header.sticky.app-header-2 .header-nav {
@@ -4185,7 +4211,6 @@ p {
 .el-menu {
   top: 0;
   left: 0;
-  float: left;
   margin-left: -15px;
   margin-right: -15px;
   position: relative;
@@ -4613,10 +4638,14 @@ p {
   font-weight: 700;
 }
 
+.el-ask-helpful .button {
+  border-color: #ccc;
+}
+
 .el-ask-helpful .button-thumb {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 900;
-  border-color: var(--base-1);
+  border-color: #ccc;
 }
 
 .el-ask-helpful .button-thumb:hover {

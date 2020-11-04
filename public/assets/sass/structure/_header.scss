@@ -87,7 +87,8 @@ $header-nav: 84px;
         animation-duration: 1s;
         animation-fill-mode: both;
         .el-menu {
-            display: none;
+            float: left;
+            text-align: center;
             li {
                 a {
                     display: block;
@@ -135,6 +136,10 @@ $header-nav: 84px;
                         content: "";
                     }
                 }
+            }
+            &.button-contact-us {
+                top: 18px;
+                position: relative;
             }
         }
         .header-logo {
@@ -187,6 +192,12 @@ $header-nav: 84px;
         }
     }
 }
+// shadow
+.app-header {
+    &.shadow {
+        box-shadow: $default-bs;
+    }
+}
 // Light
 .app-header {
     &.light {
@@ -233,6 +244,20 @@ $header-nav: 84px;
         }
     }
 }
+// Fixed
+.app-header {
+    &.fixed {
+        &.app-header-1 {
+            top: 0;
+            left: 0;
+            color: $gray;
+            position: absolute;
+            .button-contact-us {
+                background-color: $primary;
+            }
+        }
+    }
+}
 // Sticky
 .app-header {
     &.sticky {
@@ -245,6 +270,9 @@ $header-nav: 84px;
                 box-shadow: $default-bs;
                 background-color: $base-0;
                 animation-name: fadeInDown;
+            }
+            .button-contact-us {
+                background-color: $secondary;
             }
         }
         &.app-header-2 {
