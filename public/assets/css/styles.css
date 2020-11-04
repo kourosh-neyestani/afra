@@ -5124,6 +5124,10 @@ p {
           box-shadow: none;
 }
 
+.section-blog-1 .el-card-blog.el-card-blog-1 .details {
+  padding-bottom: 6px;
+}
+
 /*------------------------------------
     Section: Story
 ------------------------------------*/

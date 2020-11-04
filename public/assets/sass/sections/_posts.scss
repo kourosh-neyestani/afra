@@ -314,6 +314,9 @@
             outline: 1px solid $gray;
             border-radius: 0;
             box-shadow: none;
+            .details {
+                padding-bottom: 6px;
+            }
         }
     }
 }
