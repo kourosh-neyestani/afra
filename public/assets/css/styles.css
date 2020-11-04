@@ -4478,8 +4478,8 @@ p {
 }
 
 .el-divider-line {
-  left: 10%;
-  right: 10%;
+  left: 0;
+  right: 0;
   width: 80%;
   height: 1px;
   margin: auto;
@@ -4553,6 +4553,74 @@ p {
 
 .el-pagination.text-center ul {
   margin: auto;
+}
+
+/*------------------------------------
+    Element: Author
+------------------------------------*/
+.el-author {
+  text-align: left;
+  position: relative;
+  padding-left: 60px;
+}
+
+.el-author p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.el-author img {
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.el-author .author-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 2px;
+  margin-bottom: 7px;
+}
+
+/*------------------------------------
+    Element: Lists
+------------------------------------*/
+.el-inline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 -6px;
+}
+
+.el-inline-list li {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  padding-left: 6px;
+  padding-right: 6px;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+/*------------------------------------
+    Element: Ask is this Helpful
+------------------------------------*/
+.el-ask-helpful p {
+  color: var(--base-1);
+  font-weight: 700;
+}
+
+.el-ask-helpful .button-thumb {
+  font-size: 18px;
+  font-weight: 900;
+  border-color: var(--base-1);
+}
+
+.el-ask-helpful .button-thumb:hover {
+  border-color: var(--primary);
 }
 
 /*------------------------------------
@@ -5126,6 +5194,49 @@ p {
 
 .section-blog-1 .el-card-blog.el-card-blog-1 .details {
   padding-bottom: 6px;
+}
+
+/*------------------------------------
+    Element: Single Post
+------------------------------------*/
+.el-single-post .el-single-post-head {
+  padding: 0 0 45px;
+}
+
+.el-single-post .el-single-post-head h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.el-single-post .el-single-post-head .button {
+  margin-bottom: 30px;
+}
+
+.el-single-post .el-single-post-image {
+  overflow: hidden;
+  position: relative;
+  padding-top: 60%;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+          box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+  border-radius: 12px;
+}
+
+.el-single-post .el-single-post-image img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.el-single-post .el-single-post-details p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.el-single-post .el-single-post-details img {
+  display: block;
+  margin-bottom: 30px;
+  border-radius: 12px;
 }
 
 /*------------------------------------

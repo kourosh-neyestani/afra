@@ -325,8 +325,8 @@
 }
 
 .el-divider-line {
-    left: 10%;
-    right: 10%;
+    left: 0;
+    right: 0;
     width: 80%;
     height: 1px;
     margin: auto;
@@ -334,7 +334,6 @@
     position: relative;
     background: radial-gradient(ellipse at center, #d1dbe7 0, rgba(255, 255, 255, 0) 75%);
 }
-
 
 /*------------------------------------
     Element: Pagination
@@ -389,6 +388,73 @@
     &.text-center {
         ul {
             margin: auto;
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Author
+------------------------------------*/
+
+.el-author {
+    text-align: left;
+    position: relative;
+    padding-left: 60px;
+    p {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    img {
+        top: 0;
+        left: 0;
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .author-name {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        padding-top: 2px;
+        margin-bottom: 7px;
+    }
+}
+
+/*------------------------------------
+    Element: Lists
+------------------------------------*/
+
+.el-inline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 -6px;
+    li {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        padding-left: 6px;
+        padding-right: 6px;
+        display: inline-block;
+        margin-bottom: 3px;
+    }
+}
+
+/*------------------------------------
+    Element: Ask is this Helpful
+------------------------------------*/
+
+.el-ask-helpful {
+    p {
+        color: $base-1;
+        font-weight: 700;
+    }
+    .button-thumb {
+        font-size: 18px;
+        font-weight: 900;
+        border-color: $base-1;
+        &:hover {
+            border-color: $primary;
         }
     }
 }
