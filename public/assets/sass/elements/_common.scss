@@ -334,3 +334,61 @@
     position: relative;
     background: radial-gradient(ellipse at center, #d1dbe7 0, rgba(255, 255, 255, 0) 75%);
 }
+
+
+/*------------------------------------
+    Element: Pagination
+------------------------------------*/
+
+.el-pagination {
+    user-select: none;
+    white-space: nowrap;
+    margin: 0 auto;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            height: 33px;
+            min-width: 33px;
+            color: $text-color;
+            line-height: 33px;
+            font-size: 12px;
+            text-align: center;
+            user-select: none;
+            display: inline-block;
+            border-radius: 50%;
+            i {
+                top: 1px;
+                position: relative;
+                margin-left: 6px;
+            }
+            a {
+                display: block;
+            }
+            .fa {
+                top: 1px;
+                padding-left: 6px;
+                position: relative;
+                display: inline-block;
+            }
+            &:hover {
+                color: $primary;
+            }
+            &.active {
+                color: $base-0;
+                background-color: $primary;
+            }
+            &:not(.next):not(.more):not(.active) {
+                &:hover {
+                    background-color: #eee;
+                }
+            }
+        }
+    }
+    &.text-center {
+        ul {
+            margin: auto;
+        }
+    }
+}
