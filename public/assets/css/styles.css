@@ -788,14 +788,9 @@ h6,
   color: var(--base-1);
 }
 
-p {
-  text-align: justify;
-}
-
 @media (max-width: 768px) {
   p {
     font-size: 12px;
-    text-align: inherit;
   }
 }
 
