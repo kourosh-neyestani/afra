@@ -154,3 +154,50 @@
         }
     }
 }
+
+
+/*------------------------------------
+    Section: About
+------------------------------------*/
+
+.section-about {
+    .item {
+        color: $base-0;
+        text-align: center;
+        position: relative;
+        h3 {
+            color: inherit;
+        }
+        .numbers {
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .custom-table {
+        padding-top: 0 !important;
+    }
+}
+@media (max-width: 768px) {
+    .section-about {
+        .item {
+            h3 {
+                font-size: 12px;
+            }
+            .numbers {
+                font-size: 18px;
+            }
+        }
+        .row-custom {
+            margin-left: -6px !important;
+            margin-right: -6px !important;
+            margin-bottom: -12px !important;
+            & > * {
+                padding-left: 6px !important;
+                padding-right: 6px !important;
+                margin-bottom: 12px !important;
+            }
+        }
+    }
+}
