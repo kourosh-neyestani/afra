@@ -224,7 +224,7 @@
 .mb-space-half {
     margin-bottom: $space / 2 !important;
 }
-@each $i in (5, 10, 15, 18, 20, 24, 25, 30, 35, 40, 45, 50, 75, 100) {
+@each $i in (5, 10, 15, 18, 20, 24, 25, 30, 35, 40, 45, 50, 75, 80, 85, 90, 95, 100) {
     .pt-#{$i} {
         padding-top: unquote(($i) + "px") !important;
     }
@@ -249,40 +249,16 @@
     .ml-#{$i} {
         margin-left: unquote(($i) + "px") !important;
     }
-}
-.mt--18 {
-    margin-top: -18px !important;
-}
-.mt--24 {
-    margin-top: -24px !important;
-}
-.mt--30 {
-    margin-top: -30px !important;
-}
-.mt--36 {
-    margin-top: -36px !important;
-}
-.mt--45 {
-    margin-top: -45px !important;
-}
-.mt--60 {
-    margin-top: -60px !important;
-}
-.mb--18 {
-    margin-bottom: -18px !important;
-}
-.mb--24 {
-    margin-bottom: -24px !important;
-}
-.mb--30 {
-    margin-bottom: -30px !important;
-}
-.mb--36 {
-    margin-bottom: -36px !important;
-}
-.mb--45 {
-    margin-bottom: -45px !important;
-}
-.mb--60 {
-    margin-bottom: -60px !important;
+    .mt--#{$i} {
+        margin-top: unquote((-$i) + "px") !important;
+    }
+    .mr--#{$i} {
+        margin-right: unquote((-$i) + "px") !important;
+    }
+    .mb--#{$i} {
+        margin-bottom: unquote((-$i) + "px") !important;
+    }
+    .ml--#{$i} {
+        margin-left: unquote((-$i) + "px") !important;
+    }
 }
