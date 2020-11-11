@@ -7,7 +7,7 @@
 
 // Default
 .el-heading {
-    width: 660px;
+    width: 570px;
     max-width: 100%;
     margin-bottom: $space;
     &.side {
@@ -17,6 +17,62 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+// Heading - 1
+.el-heading {
+    &.el-heading-1 {
+        margin-bottom: 0;
+        h2 {
+            font-weight: 700;
+            display: inline-block;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .tag {
+            color: $secondary;
+            font-weight: 700;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            padding: 6px 21px;
+            margin-bottom: 3px;
+            border-radius: 45px;
+            &:before {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.15;
+                content: "";
+                position: absolute;
+                background-color: $secondary;
+            }
+        }
+        .label {
+            color: $primary;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            @extend .h5;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.el-title {
+    h2 {
+        @extend .h1;
+        display: inline-block;
+        span {
+            display: inline-block;
+            margin-right: 6px;
+            border-bottom: 2px solid $base-1;
+        }
     }
 }
 
@@ -191,7 +247,7 @@
         width: 39px;
         height: 39px;
         z-index: 999;
-        color: $text-color;
+        color: $primary;
         cursor: pointer;
         display: block;
         font-size: 18px;
@@ -202,6 +258,7 @@
         border-radius: 50%;
         background-color: #f4f4f4;
         outline: 0 !important;
+        transition: all 300ms;
         &.el-slider-prev {
             right: 45px !important;
         }
@@ -210,6 +267,10 @@
         }
         i {
             font-size: 12px;
+        }
+        &:hover {
+            color: $base-0 !important;
+            background-color: $primary !important;
         }
     }
     .swiper-button-next,
@@ -458,5 +519,29 @@
         &:hover {
             border-color: $primary;
         }
+    }
+}
+
+/*------------------------------------
+    Element: Languages 
+------------------------------------*/
+
+.el-select-languages {
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    img {
+        width: 18px;
+        display: inline-block;
+        margin-right: 6px;
+    }
+    .text {
+        top: 2px;
+        position: relative;
+        margin-right: 3px;
+    }
+    i {
+        top: 3px;
+        position: relative;
     }
 }
