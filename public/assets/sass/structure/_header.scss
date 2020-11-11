@@ -288,6 +288,7 @@ $header-nav: 84px;
                 left: 0;
                 width: 100%;
                 position: fixed;
+                color: $base-1 !important; 
                 box-shadow: $default-bs;
                 background-color: $base-0 !important;
                 animation-name: fadeInDown;
