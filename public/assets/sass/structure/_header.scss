@@ -87,7 +87,6 @@ $header-nav: 84px;
         animation-duration: 1s;
         animation-fill-mode: both;
         .el-menu {
-            float: left;
             text-align: center;
             li {
                 a {
@@ -224,6 +223,32 @@ $header-nav: 84px;
         }
     }
 }
+// dark
+.app-header {
+    &.dark {
+        color: $base-1;
+        a {
+            transition: all 0.009ms;
+        }
+        .button-menu {
+            span {
+                &,
+                &:before,
+                &:after {
+                    background-color: $base-1 !important;
+                }
+            }
+        }
+        .header-nav {
+            background-color: transparent !important;
+        }
+        &.sticky {
+            .header-nav {
+                background-color: $base-1 !important;
+            }
+        }
+    }
+}
 // Glass
 .app-header {
     &.glass {
@@ -250,11 +275,7 @@ $header-nav: 84px;
         &.app-header-1 {
             top: 0;
             left: 0;
-            color: $gray;
             position: absolute;
-            .button-contact-us {
-                background-color: $primary;
-            }
         }
     }
 }
@@ -268,10 +289,11 @@ $header-nav: 84px;
                 width: 100%;
                 position: fixed;
                 box-shadow: $default-bs;
-                background-color: $base-0;
+                background-color: $base-0 !important;
                 animation-name: fadeInDown;
             }
             .button-contact-us {
+                color: $base-0;
                 background-color: $secondary;
             }
         }

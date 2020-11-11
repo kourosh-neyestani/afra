@@ -5,11 +5,22 @@
         // Launch Functions
         Launch: function () {
             fn.Test();
+            fn.Sticky();
             fn.Sidenav();
             fn.Carousel();
         },
         Test: function () {
             console.log("Worked!");
+        },
+        Sticky: function () {
+            var header = $(".app-header.fixed");
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > header.height()) {
+                    header.addClass("sticky");
+                } else {
+                    header.removeClass("sticky");
+                }
+            });
         },
         Sidenav: function () {
             var button = $(".button-display-sidenav");
@@ -50,7 +61,7 @@
                     1200: {
                         slidesPerView: 3,
                         spaceBetween: 18,
-                    }
+                    },
                 },
             });
             var mySwiper = new Swiper(".el-swiper-portfolio-15", {
@@ -102,6 +113,17 @@
                         slidesPerView: 3,
                         spaceBetween: 45,
                     },
+                },
+            });
+            var swiper = new Swiper(".el-swiper-mousewheel", {
+                direction: "vertical",
+                slidesPerView: 1,
+                fade: true,
+                spaceBetween: 0,
+                mousewheel: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
                 },
             });
         },
