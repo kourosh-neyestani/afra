@@ -545,3 +545,40 @@
         position: relative;
     }
 }
+
+/*------------------------------------
+    Element: Device Frame 
+------------------------------------*/
+
+// Laptop Device
+.el-device {
+    &.el-device-laptop {
+        top: 25%;
+        right: 0;
+        width: 750px;
+        height: 0;
+        position: absolute;
+        .el-device-frame {
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding-top: 58.7%;
+            position: absolute;
+            & > img {
+                top: 0;
+                left: 0;
+                width: 100%;
+                position: absolute;
+            }
+            .el-device-inner {
+                top: 5.2%;
+                left: 14%;
+                right: 14%;
+                bottom: 14%;
+                margin: auto;
+                position: absolute;
+                background-color: #212121;
+            }
+        }
+    }
+}
