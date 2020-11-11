@@ -109,6 +109,25 @@
     background-color: $base-0;
 }
 
+// Card - 1
+
+.el-card {
+    &.el-card-1 {
+        .el-card-icon {
+            width: 60px;
+            height: 60px;
+            color: $base-0;
+            font-size: 24px;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 50%;
+            color: $primary !important;
+            background: $gray !important;
+            box-shadow: none !important;
+        }
+    }
+}
+
 /*------------------------------------
     Element: Plan 
 ------------------------------------*/
