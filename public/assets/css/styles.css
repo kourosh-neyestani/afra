@@ -7264,6 +7264,12 @@ form .input-select .select2-container--default .select2-selection--single .selec
   border-radius: 12px;
 }
 
+@media (max-width: 768px) {
+  .el-single-post .el-single-post-head h1 {
+    font-size: 24px;
+  }
+}
+
 /*------------------------------------
     Section: Story
 ------------------------------------*/

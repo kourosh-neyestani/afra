@@ -364,3 +364,13 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .el-single-post {
+        .el-single-post-head {
+            h1 {
+                font-size: 24px;
+            }
+        }
+    }
+}
