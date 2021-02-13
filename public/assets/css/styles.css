@@ -7261,13 +7261,17 @@ form .input-select .select2-container--default .select2-selection--single .selec
     Section: Story
 ------------------------------------*/
 .section-story .el-item {
-  overflow: hidden;
   position: relative;
 }
 
 .section-story .el-item .image {
+  overflow: hidden;
   position: relative;
-  background-color: var(--gray);
+}
+
+.section-story .el-item .image img {
+  height: 450px;
+  display: block;
 }
 
 .section-story .el-item .detail {
@@ -7281,10 +7285,6 @@ form .input-select .select2-container--default .select2-selection--single .selec
 
 .section-story.section-story-15 .el-item:not(:last-child) {
   margin-bottom: 100px;
-}
-
-.section-story.section-story-15 .el-item .image {
-  padding-top: 75%;
 }
 
 .section-story.section-story-16 .el-item .image {

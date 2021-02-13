@@ -5,11 +5,16 @@
 // Default
 .section-story {
     .el-item {
-        overflow: hidden;
         position: relative;
         .image {
+            overflow: hidden;
             position: relative;
-            background-color: $gray;
+            img {
+                // width: auto !important;
+                // max-width: inherit !important;
+                height: 450px;
+                display: block;
+            }
         }
         .detail {
             padding-right: 15%;
@@ -30,14 +35,21 @@
             &:not(:last-child) {
                 margin-bottom: $space;
             }
-            .image {
-                padding-top: 75%;
-            }
+            // &:nth-child(even) {
+            //     .col-image {
+            //         img {
+            //             float: right;
+            //         }
+            //     }
+            // }
             &:nth-child(odd) {
                 .col-image {
                     @extend .order-md-2;
                     @extend .order-lg-2;
                     @extend .order-xl-2;
+                    // img {
+                    //     float: left;
+                    // }
                 }
                 .col-detail {
                     @extend .order-md-1;
