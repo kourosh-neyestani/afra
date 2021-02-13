@@ -55,3 +55,16 @@
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    .section-cta {
+        &.section-cta-17 {
+            .button {
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
