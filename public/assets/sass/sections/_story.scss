@@ -129,8 +129,11 @@
             margin-bottom: $space !important;
             .image {
                 width: 100% !important;
-                padding-top: 60% !important;
-                margin-bottom: $space - 6px;
+                padding-top: 0 !important;
+                margin-bottom: 45px;
+                img {
+                    height: auto !important;
+                }
             }
             .detail {
                 text-align: center;

@@ -7334,8 +7334,11 @@ form .input-select .select2-container--default .select2-selection--single .selec
   }
   .section-story .el-item .image {
     width: 100% !important;
-    padding-top: 60% !important;
-    margin-bottom: 94px;
+    padding-top: 0 !important;
+    margin-bottom: 45px;
+  }
+  .section-story .el-item .image img {
+    height: auto !important;
   }
   .section-story .el-item .detail {
     text-align: center;
