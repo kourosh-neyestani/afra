@@ -7680,6 +7680,56 @@ form .input-select .select2-container--default .select2-selection--single .selec
   background-color: #212121;
 }
 
+@media (max-width: 992px) {
+  .section-services {
+    height: inherit;
+  }
+  .section-services .display-center {
+    top: inherit !important;
+    left: inherit !important;
+    right: inherit !important;
+    bottom: inherit !important;
+    position: relative !important;
+    -webkit-transform: translate(0, 0) !important;
+            transform: translate(0, 0) !important;
+    padding-top: 150px;
+    padding-bottom: 60px;
+  }
+  .section-services .el-device {
+    display: none;
+  }
+  .section-services .el-device.el-device-mobile {
+    top: inherit !important;
+    left: inherit !important;
+    right: inherit !important;
+    bottom: inherit !important;
+    position: relative !important;
+    -webkit-transform: translate(0, 0) !important;
+            transform: translate(0, 0) !important;
+    height: inherit !important;
+    overflow: hidden;
+    position: relative !important;
+    background-color: transparent !important;
+    margin: auto !important;
+  }
+  .section-services .el-device.el-device-mobile .el-device-frame {
+    width: 300px;
+    height: 533px;
+    top: inherit !important;
+    left: inherit !important;
+    right: inherit !important;
+    bottom: inherit !important;
+    padding: 0 !important;
+    position: relative !important;
+    -webkit-transform: translate(0, 0) !important;
+            transform: translate(0, 0) !important;
+    position: relative !important;
+  }
+  .section-services .shape {
+    opacity: .3;
+  }
+}
+
 /*------------------------------------
     Section: Comments
 ------------------------------------*/
