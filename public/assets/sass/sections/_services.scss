@@ -20,6 +20,16 @@
     }
 }
 
+@media (max-width: 768px) {
+    .el-service {
+        &.el-service-1 {
+            p {
+                width: 60%;
+            }
+        }
+    }
+}
+
 
 /*------------------------------------
     Section: Services

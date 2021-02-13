@@ -7591,6 +7591,12 @@ form .input-select .select2-container--default .select2-selection--single .selec
   position: absolute;
 }
 
+@media (max-width: 768px) {
+  .el-service.el-service-1 p {
+    width: 60%;
+  }
+}
+
 /*------------------------------------
     Section: Services
 ------------------------------------*/
