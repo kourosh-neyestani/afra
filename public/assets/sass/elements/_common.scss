@@ -76,6 +76,13 @@
     }
 }
 
+@media (max-width: 992px) {
+    .el-heading-mobilecenter {
+        margin: auto;
+        text-align: center;
+    }
+}
+
 /*------------------------------------
     Element: Menu 
 ------------------------------------*/

@@ -6109,6 +6109,13 @@ form .input-select .select2-container--default .select2-selection--single .selec
   border-bottom: 2px solid var(--base-1);
 }
 
+@media (max-width: 992px) {
+  .el-heading-mobilecenter {
+    margin: auto;
+    text-align: center;
+  }
+}
+
 /*------------------------------------
     Element: Menu 
 ------------------------------------*/
@@ -7526,6 +7533,22 @@ form .input-select .select2-container--default .select2-selection--single .selec
     padding-left: 6px !important;
     padding-right: 6px !important;
     margin-bottom: 12px !important;
+  }
+}
+
+/*------------------------------------
+    Section: Excerpt
+------------------------------------*/
+@media (min-width: 993px) {
+  .section-excerpt img {
+    margin: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-excerpt .display-spacing {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
