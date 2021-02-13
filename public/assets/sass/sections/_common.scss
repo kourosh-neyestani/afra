@@ -215,6 +215,9 @@
 
 @media (max-width: 992px) {
     .section-excerpt {
+        .col-image {
+            text-align: center !important;
+        }
         .display-spacing {
             padding-top: 0;
             padding-bottom: 0;

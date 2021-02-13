@@ -7546,6 +7546,9 @@ form .input-select .select2-container--default .select2-selection--single .selec
 }
 
 @media (max-width: 992px) {
+  .section-excerpt .col-image {
+    text-align: center !important;
+  }
   .section-excerpt .display-spacing {
     padding-top: 0;
     padding-bottom: 0;
